@@ -357,3 +357,55 @@ canvas.particles-js-canvas-el {
 	top: 1.25rem;
 	color: var(--primary-color);
 }
+
+/*4.3 portfolio*/
+.portfolio_wrapper .nav-link {
+	color: var(--text-white);
+	font-weight: 600;
+	font-size: 1.125rem;
+	letter-spacing: 0.0625rem;
+	text-align: center;
+}
+
+.portfolio_wrapper .nav-link.active,
+.portfolio_wrapper .show > .nav-link {
+	background-color: transparent;
+	color: var(--primary-color);
+}
+
+.portfolio_wrapper .portfolio-img {
+	width: 100%;
+	min-height: 23.75rem;
+	height: 100%;
+	position: relative;
+	border-radius: 0.9375rem;
+	cursor: pointer;
+}
+
+.portfolio_wrapper .portfolio-img > img {
+	border-radius: 0.9375rem;
+	object-fit: cover;
+	object-position: center;
+}
+
+.portfolio_wrapper .portfolio-img .hidden-text {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 0;
+	z-index: 1;
+	background-color: rgba(255, 69, 27, 0.72);
+	border-radius: 0.625rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	overflow: hidden;
+}
